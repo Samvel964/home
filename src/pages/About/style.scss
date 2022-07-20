@@ -10,7 +10,10 @@
         
         .abuot-info {
             font-size: 25px;
-            // margin-top: 50px;           
+
+            @media(max-width:425px){
+                font-size: 22px;
+            }          
         }
 
         .info-continiue {
@@ -21,6 +24,17 @@
                 color: orange;
                 text-decoration: none;         
             }
+
+            @media(max-width:425px){
+                font-size: 21px;
+            } 
         }
     }  
+
+    @media(max-width:425px){
+        background-size: 100%;
+        background-position: 100px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;        
+    }
 }

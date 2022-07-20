@@ -15,7 +15,7 @@ export default function MyRoutes(){
     return(
         <Routes>
             <Route path='/' element={<MainLayout />}>
-                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/my-works" element={<MyWorks />} />
                 <Route path="/my-works/todo" element={<TodoApp />} />

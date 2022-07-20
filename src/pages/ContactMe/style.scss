@@ -6,4 +6,11 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     color:grey;
+
+    @media(max-width:425px){
+        background-size: 100%;
+        background-position: 100px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;        
+    }
 }

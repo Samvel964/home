@@ -8,7 +8,7 @@ import { CardActionArea } from '@mui/material';
 export default function ActionAreaCard({title, description, img}) {
   return (
     <div className='container '>
-      <Card sx={{ maxWidth: 345,minHeight:360,backgroundColor:'#252424'}} className="main-Card border">
+      <Card sx={{ maxWidth: 345,height:360,overflow:"hidden",backgroundColor:'#252424'}} className="main-Card border">
         <CardActionArea>
           <CardMedia
             component="img"

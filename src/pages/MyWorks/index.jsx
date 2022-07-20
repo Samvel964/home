@@ -12,14 +12,14 @@ export default function MyWorks() {
         
         <BigCard
           title="Tic Tac Toe"
-          description={"sa im havaqc xaxn e"}
+          description={"a game in which two players seek in alternate turns to complete a row, a column, or a diagonal with either three O's or three X's drawn in the spaces of a grid of nine squares; noughts and crosses."}
           img={ticTacToeImg}
         />
       </div>
       <div onClick={() => navigate("/my-works/todo")}>
         <BigCard
           title="Todo List"
-          description={"shat ogtakar app"}
+          description={"It's a list of tasks you need to complete or things that you want to do."}
           img={todoListImg}
         />
       </div>

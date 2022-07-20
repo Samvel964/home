@@ -14,6 +14,11 @@
                 color: white;
                 width: 400px;
                 font-size: 68px;
+
+                @media(max-width:425px){
+                    width: 300px;
+                    font-size: 48px;
+                }
             }
             div {
                 top: 410px;
@@ -31,5 +36,12 @@
                 }
             }
         }
+    }
+
+    @media(max-width:425px){
+        background-size: 100%;
+        background-position: 100px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;        
     }
 }
