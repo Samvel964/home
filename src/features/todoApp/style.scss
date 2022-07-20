@@ -1,0 +1,25 @@
+.todo-app {
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 25px grey;
+    margin: 30px auto;
+    background-color:lightgrey;
+    color: black;
+
+
+    .todo-header {
+        display: flex;
+    }
+
+    .todo-item{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid rgb(192, 190, 190);
+
+        .check-title {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+}

@@ -1,0 +1,25 @@
+.memoryGame {
+    display: flex;
+    flex-wrap: wrap;
+    width: 550px;
+    margin: 0 auto;
+
+    .item {
+        width: 120px;
+        height: 120px;
+        margin:5px;
+        border: 1px solid white;
+        background-color: grey;
+        cursor: pointer;
+    }
+
+    .pict {
+        background-color: white;
+
+    }
+
+    .disabled {
+        pointer-events: none;
+    }
+
+}

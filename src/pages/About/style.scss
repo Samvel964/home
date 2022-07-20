@@ -1,0 +1,26 @@
+.about {
+    background-image: url(../../images/20220702_114613-removebg-preview.png);
+    background-size: 66%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:grey;
+
+    .container {
+        
+        .abuot-info {
+            font-size: 25px;
+            // margin-top: 50px;           
+        }
+
+        .info-continiue {
+            font-size: 25px;
+
+            a {
+                font-size: 18px;
+                color: orange;
+                text-decoration: none;         
+            }
+        }
+    }  
+}
