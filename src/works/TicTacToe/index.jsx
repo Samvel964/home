@@ -7,7 +7,6 @@ export default function TicTacToe() {
   const navigate = useNavigate();
 
   const [gameBody, setGameBody] = useState([
-    //չեմ հասկանում ինչի հաշվին ա ռենդեռ լինում՞՞՞
     { title: "" },
     { title: "" },
     { title: "" },

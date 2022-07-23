@@ -18,9 +18,20 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: black;
+
+            @media(max-width:425px) {
+                width: 100px;
+                height: 100px;
+                font-size: 90px;            
+            }
         }
         .disabled {
             pointer-events: none;
+        }
+
+        @media(max-width:425px) {
+            width: 320px;
         }
     }
 }
