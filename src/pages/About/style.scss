@@ -1,9 +1,4 @@
 .about {
-    // background-image: url(../../images/20220702_114613-removebg-preview.png);
-    // background-size: 66%;
-    // background-position: right;
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
     color:grey;
 
     .container {
@@ -13,6 +8,9 @@
 
             @media(max-width:425px){
                 font-size: 22px;
+            }
+            @media(max-width:320px){
+                font-size: 18px;
             }          
         }
 
@@ -27,14 +25,10 @@
 
             @media(max-width:425px){
                 font-size: 21px;
+            }
+            @media(max-width:320px){
+                font-size: 17px;
             } 
         }
-    }  
-
-    // @media(max-width:425px){
-    //     background-size: 100%;
-    //     background-position: 100px;
-    //     background-repeat: no-repeat;
-    //     background-attachment: fixed;        
-    // }
+    }
 }

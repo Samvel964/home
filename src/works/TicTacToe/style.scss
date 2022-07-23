@@ -25,6 +25,12 @@
                 height: 100px;
                 font-size: 90px;            
             }
+            @media(max-width:320px) {
+                width: 90px;
+                height: 90px;
+                font-size: 85px;
+                margin: 2px;           
+            }
         }
         .disabled {
             pointer-events: none;
@@ -32,6 +38,9 @@
 
         @media(max-width:425px) {
             width: 320px;
+        }
+        @media(max-width:320px) {
+            width: 283px;
         }
     }
 }

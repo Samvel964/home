@@ -1,9 +1,4 @@
 .home {
-    // background-image: url(../../images/20220702_114613-removebg-preview.png);
-    // background-size: 66%;
-    // background-position: right;
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
     color: grey;
 
     .home-content {
@@ -20,6 +15,7 @@
                     font-size: 48px;
                 }
             }
+
             div {
                 top: 410px;
                 font-size: 28px;
@@ -37,11 +33,4 @@
             }
         }
     }
-
-    // @media(max-width:425px){
-    //     background-size: 100%;
-    //     background-position: 100px;
-    //     background-repeat: no-repeat;
-    //     // background-attachment: fixed;   
-    // }
 }
