@@ -1,16 +1,71 @@
 .contact {
-    // background-image: url(../../images/20220702_114613-removebg-preview.png);
-    // background-size: 66%;
-    // height: 100vh;
-    // background-position: right;
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
-    color:grey;
+    .information {
+        box-shadow: 0 0 15px rgb(37, 37, 37);
+        .text {
+            font-size: 35px;
+            color: orange;
+        }
+            
+                .left {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
 
-    // @media(max-width:425px){
-    //     background-size: 100%;
-    //     background-position: 100px;
-    //     background-repeat: no-repeat;
-    //     background-attachment: fixed;        
-    // }
+                    p {
+                        margin: 2px;
+                    }
+
+                    .phone-icon {
+                        font-size: 50px;
+                        margin-bottom: 13px;
+                    }
+                }
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        margin: 2px;
+                    }
+
+                    .mail-icon {
+                        font-size: 50px;
+                        margin-bottom: 13px;
+                    }
+                }    
+            
+            .social {
+                .follow {
+                    text-align: center;
+                    margin-top: 25px;
+                    font-size: 25px;
+                    color: orange;
+                }
+              
+                &-links {
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        display: block;
+                        margin: 8px;
+                        color: grey;
+                        transition: .3s; 
+                        
+                        .soc-icons {
+                            font-size: 30px;
+                        }
+
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+
+            }
+        
+    }
 }

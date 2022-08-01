@@ -4,19 +4,9 @@ export const todoAppSlice = createSlice({
     name:'todoApp',
     initialState:{
         list:[
-            {
-                title:'Learn JS',
-                completed:false
-            },
-            {
-                title:'Learn React',
-                completed:false
-            },
-            {
-                title:'Take painkiller',
-                completed:false
-            },
-      
+            {title:'Learn JS', completed:false},
+            {title:'Learn React', completed:false},
+            {title:'Take painkiller', completed:false}      
         ],
         searchValue:'',
         num:0

@@ -1,10 +1,10 @@
 import './style.scss';
 import { useSelector } from 'react-redux';
-import { initialTodo, number } from '../../../features/todoApp/todoAppSlice';
+import { initialTodo, number } from '../../../features/todoAppSlice';
 import IconButton from '@mui/material/IconButton';
 import DeleteSweepRoundedIcon from '@mui/icons-material/DeleteSweepRounded';
 import { useDispatch } from 'react-redux';
-import { clearCompleted } from '../../../features/todoApp/todoAppSlice';
+import { clearCompleted } from '../../../features/todoAppSlice';
 
 
 export default function Counter() {

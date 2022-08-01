@@ -1,5 +1,6 @@
 import "./style.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Swal from "sweetalert2";
 import img1 from "./images/image1.jpg";
 import img2 from "./images/image2.jpg";
 import img3 from "./images/image3.jpg";
@@ -8,8 +9,7 @@ import img5 from "./images/image5.jpg";
 import img6 from "./images/image6.jpg";
 import img7 from "./images/image7.jpg";
 import img8 from "./images/image8.jpg";
-import black from "./images/black.jpg";
-import { useEffect } from "react";
+import closed from "./images/black.jpg";
 
 const array = [
   { image: img2, state: "opened", correct: false },
@@ -30,50 +30,70 @@ const array = [
   { image: img8, state: "opened", correct: false },
 ];
 
-let shuffledArray
-
 const opened = [];
 const correct = [];
 
-function newGame() {
-  shuffledArray = array.sort((a, b) => 0.5 - Math.random());
-  correct.length = 0;
+function shuffel() {
+  return array.sort((a, b) => 0.5 - Math.random());
 }
-newGame();
+shuffel();
 
 export default function MemoryGame() {
-  const [memory, setMemory] = useState(shuffledArray);
-  const [className, setClassName] = useState("item");
+  const [memory, setMemory] = useState(shuffel);
+  const [classNamea, setClassNamea] = useState("item ");
+  const [num, setNum] = useState(1);
 
   useEffect(() => {
     setTimeout(() => {
-      memory.forEach(item => item.state = "closed");
+      memory.forEach((item) => (item.state = "closed"));
       setMemory([...memory]);
     }, 2000);
-  }, [shuffledArray]);
+    // eslint-disable-next-line
+  }, [num]);
 
-  function onClickHandler(e, item, index) {
+  function onClickHandler(e, item) {
     item.state = "opened";
     e.target.className = "item disabled";
     opened.push(item);
     setMemory([...memory]);
 
-    if (opened[0].image === opened[1].image) {
+    // In case of coincindence
+
+    if (opened.length === 2 && opened[0].image === opened[1].image) {
       opened.forEach((item) => correct.push(item));
       correct.forEach((item) => (item.correct = true));
       opened.length = 0;
-    } else if (opened.length >= 2) {
-      setClassName("item disabled");
+    }
+    // In case of incoincindence
+
+    if (opened.length >= 2) {
+      setClassNamea("item disabled");
       setTimeout(() => {
         opened.forEach((item) => (item.state = "closed"));
         opened.length = 0;
         setMemory([...memory]);
-        setClassName("item ");
+        setClassNamea("item ");
       }, 1500);
     }
-
+    // In case of win
     if (correct.length === 16) {
-      newGame()     
+      Swal.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "info",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, delete it!",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          shuffel();
+          correct.forEach((item) => (item.correct = false));
+          correct.length = 0;
+          setNum(num + 1);
+          setMemory(shuffel);
+        }
+      });
     }
   }
 
@@ -83,16 +103,17 @@ export default function MemoryGame() {
         {memory.map((item, index) => {
           return (
             <div
-              className={item.correct ? "item disabled filter" : className}
+              className={item.correct ? "item disabled filter" : classNamea}
               style={
                 item.state === "opened"
                   ? {
-                      background: `url(${item.image})`,
+                      backgroundImage: `url(${item.image})`,
                       backgroundSize: "contain",
                     }
-                  : { background: `url(${black})` }
+                  : { backgroundImage: `url(${closed})` }
               }
               onClick={(e) => onClickHandler(e, item, index)}
+              key={index}
             ></div>
           );
         })}

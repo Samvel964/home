@@ -1,10 +1,10 @@
 import Checkbox from '@mui/material/Checkbox';
 import { useSelector ,useDispatch} from 'react-redux';
-import { initialTodo ,isChecked} from '../../../features/todoApp/todoAppSlice';
+import { initialTodo ,isChecked} from '../../../features/todoAppSlice';
 
 
 
-export default function CheckboxInput({list,index}) {
+export default function CheckboxInput({list,index,id}) {
     let initialList = useSelector(initialTodo)
     let itemIndex = null
     const itemTitle = list[index].title
@@ -15,7 +15,7 @@ export default function CheckboxInput({list,index}) {
     }
     const dispatch = useDispatch()
     return (
-        <Checkbox checked={list[index].completed} onClick={(e) => {
+        <Checkbox checked={list[index].completed} id={id} onClick={(e) => {
             dispatch(isChecked([itemIndex,e.target.checked]))
         }}/>
     )

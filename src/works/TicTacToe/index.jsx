@@ -52,15 +52,14 @@ export default function TicTacToe() {
 
     function winner(player) {
       Swal.fire({
-        title: player ? "Player " + player + " is win" : "Nobody is win",
+        title: player ? "Player " + player + " is win" : "Nobody won",
         text: "do you want to play again?",
         showCancelButton: true,
         confirmButtonColor: "#3085d6",
         cancelButtonColor: "#d33",
         confirmButtonText: "Yes!",
       }).then((result) => {
-        if (result.isConfirmed) {
-          Swal.fire(
+        if (result.isConfirmed) {          
             setGameBody([
               { title: "" },
               { title: "" },
@@ -71,8 +70,7 @@ export default function TicTacToe() {
               { title: "" },
               { title: "" },
               { title: "" },
-            ])
-          );
+            ])        
           setItemClass("item ");
           setStep(1);
           setPlayer("X");
@@ -89,20 +87,15 @@ export default function TicTacToe() {
       ) {
         setItemClass("item disabled");
         winner(player);
-      } else if (
-        gameBody[combinations[i][0]].title === player &&
-        gameBody[combinations[i][1]].title === player &&
-        gameBody[combinations[i][2]].title === player
-      ) {
-        setItemClass("item disabled");
-        winner(player);
+        return;
       }
     }
-
     if (step >= 9) {
-      setItemClass("item disabled");
-      winner();
-    }
+     setItemClass("item disabled");
+     winner();
+   }
+
+    
   }
 
   return (

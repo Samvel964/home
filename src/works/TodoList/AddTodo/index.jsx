@@ -3,9 +3,9 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
-// import { addTodo } from '../../features/todoApp/todoAppSlice';
-import { addTodo } from '../../../features/todoApp/todoAppSlice';
+import { addTodo } from '../../../features/todoAppSlice';
 import { useDispatch } from 'react-redux';
+
 export default function AddTodo() {
     const dispatch = useDispatch()
     return (

@@ -1,11 +1,11 @@
 import { useSelector } from "react-redux";
 import './style.scss';
-import Checkbox from '../../works/TodoList/Checkbox/index';
-import EditDelete from '../../works/TodoList/Edit/index';
-import AddTodo from '../../works/TodoList/AddTodo/index';
-import Counter from '../../works/TodoList/Counter/index';
-import SearchTodo from '../../works/TodoList/SearchTodo/index';
-import { searchSystem } from "./todoAppSlice";
+import Checkbox from '../Checkbox';
+import EditDelete from '../Edit';
+import AddTodo from '../AddTodo/index';
+import Counter from '../Counter';
+import SearchTodo from '../SearchTodo';
+import { searchSystem } from "../../../features/todoAppSlice";
 
 export default function TodoApp() {
 
@@ -21,8 +21,8 @@ export default function TodoApp() {
                 return(
                     <div key={item.title+"-" + index} className='todo-item'>
                         <div className="check-title">
-                            <Checkbox list={list} index={index} />
-                            {item.completed ? <span><del>{item.title}</del></span> : <span>{item.title}</span>}
+                            <Checkbox list={list} index={index} id={item.title + index}/>
+                            {item.completed ? <label for={item.title + index}><del>{item.title}</del></label> : <label  for={item.title + index}>{item.title}</label>}
                         </div>
                         <EditDelete list={list} index={index}/>
                     </div>

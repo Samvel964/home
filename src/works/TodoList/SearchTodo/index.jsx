@@ -1,6 +1,6 @@
 import TextField from '@mui/material/TextField';
 import { useDispatch } from 'react-redux';
-import { searchTodo } from '../../../features/todoApp/todoAppSlice';
+import { searchTodo } from '../../../features/todoAppSlice';
 
 
 export default function SearchTodo() {

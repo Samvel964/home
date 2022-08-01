@@ -3,7 +3,7 @@ import Stack from '@mui/material/Stack';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import { useDispatch,useSelector } from 'react-redux';
-import { deleteTodo,editTodo,initialTodo} from '../../../features/todoApp/todoAppSlice';
+import { deleteTodo,editTodo,initialTodo} from '../../../features/todoAppSlice';
 import Swal from 'sweetalert2'
 
 

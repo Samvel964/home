@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import todoAppReducer from "../features/todoApp/todoAppSlice";
+import todoAppReducer from "../features/todoAppSlice";
+import pathReducer from "../features/pathSlice";
 
 export default configureStore({
     reducer: {
-        todoApp:todoAppReducer
+        todoApp:todoAppReducer,
+        path:pathReducer,
     }
 })

@@ -9,16 +9,15 @@ export default function About() {
             <div className='abuot-info col-md-7'>
                 <div className='animate__animated animate__slideInUp animate__slow'>
                     <p>Hello, my name is Samvel. I am from Armenia.I am 31 years old.</p>
-                    <p>I am a junior web developer. I am married, I have 2 sons.</p>
+                    <p>I am a junior web developer. </p>
                     <p>I have been working in Armenian Military Forces for 12 years.</p>
-                    <p>Then, I decided to become a programmer. I started my resarch on programming and liked this sphere very much.</p>
+                    <p>Then, I started my resarch on programming and decided to become a programmer. </p>
                 </div>
             </div>
             <div className='info-continiue col-md-7'>
                 <div className='animate__animated animate__slideInUp animate__slower' >
-                <p>After this, I started to learn programming.</p>
-                <p>I have studied</p>
-                <p className='d-flex'> 
+                <p>In so far, I have learned </p>
+                <div className='d-flex'> 
                     <ul>
                         <li>HTML5</li>
                         <li>CSS3</li>
@@ -36,7 +35,7 @@ export default function About() {
                         <li>git</li>
                         <li>github</li>
                     </ul>         
-                </p> 
+                </div> 
                 <Link to='/contact'>Contact ></Link>
                 </div>
                 
