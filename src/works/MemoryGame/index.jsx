@@ -40,7 +40,7 @@ shuffel();
 
 export default function MemoryGame() {
   const [memory, setMemory] = useState(shuffel);
-  const [classNamea, setClassNamea] = useState("item ");
+  const [className, setClassName] = useState("item ");
   const [num, setNum] = useState(1);
 
   useEffect(() => {
@@ -67,24 +67,24 @@ export default function MemoryGame() {
     // In case of incoincindence
 
     if (opened.length >= 2) {
-      setClassNamea("item disabled");
+      setClassName("item disabled");
       setTimeout(() => {
         opened.forEach((item) => (item.state = "closed"));
         opened.length = 0;
         setMemory([...memory]);
-        setClassNamea("item ");
+        setClassName("item ");
       }, 1500);
     }
     // In case of win
     if (correct.length === 16) {
       Swal.fire({
-        title: "Are you sure?",
-        text: "You won't be able to revert this!",
+        title: "You win",
+        text: "Play again",
         icon: "info",
         showCancelButton: true,
         confirmButtonColor: "#3085d6",
         cancelButtonColor: "#d33",
-        confirmButtonText: "Yes, delete it!",
+        confirmButtonText: "Yes!",
       }).then((result) => {
         if (result.isConfirmed) {
           shuffel();
@@ -103,7 +103,7 @@ export default function MemoryGame() {
         {memory.map((item, index) => {
           return (
             <div
-              className={item.correct ? "item disabled filter" : classNamea}
+              className={item.correct ? "item disabled filter" : className}
               style={
                 item.state === "opened"
                   ? {

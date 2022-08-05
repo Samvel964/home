@@ -5,9 +5,7 @@
     background-size: 66%;
     background-position: right;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    
+    background-attachment: fixed;    
 }
 
 @media(max-width:425px){

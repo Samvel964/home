@@ -8,8 +8,7 @@ import SearchTodo from '../SearchTodo';
 import { searchSystem } from "../../../features/todoAppSlice";
 
 export default function TodoApp() {
-
-    const list = useSelector(searchSystem)    
+    const list = useSelector(searchSystem);  
 
     return (
         <div className="todo-app ">
@@ -28,9 +27,7 @@ export default function TodoApp() {
                     </div>
                 )
             })}
-
             <Counter />
-        </div>
-      
+        </div>      
     )
 }

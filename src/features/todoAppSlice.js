@@ -55,7 +55,6 @@ export const todoAppSlice = createSlice({
     }    
 })
 
-
 export function searchSystem(state) {
     if (!state.todoApp.searchValue) {
         return state.todoApp.list;

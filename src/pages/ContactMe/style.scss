@@ -1,71 +1,164 @@
 .contact {
+    padding: 30px 0;
     .information {
         box-shadow: 0 0 15px rgb(37, 37, 37);
+        background-color: black;
         .text {
             font-size: 35px;
             color: orange;
         }
-            
-                .left {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
 
-                    p {
-                        margin: 2px;
-                    }
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-                    .phone-icon {
-                        font-size: 50px;
-                        margin-bottom: 13px;
-                    }
-                }
-                .right {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-
-                    p {
-                        margin: 2px;
-                    }
-
-                    .mail-icon {
-                        font-size: 50px;
-                        margin-bottom: 13px;
-                    }
-                }    
-            
-            .social {
-                .follow {
-                    text-align: center;
-                    margin-top: 25px;
-                    font-size: 25px;
-                    color: orange;
-                }
-              
-                &-links {
-                    display: flex;
-                    justify-content: center;
-
-                    a {
-                        display: block;
-                        margin: 8px;
-                        color: grey;
-                        transition: .3s; 
-                        
-                        .soc-icons {
-                            font-size: 30px;
-                        }
-
-                        &:hover {
-                            color: white;
-                        }
-                    }
-                }
-
+            p {
+                margin: 2px;
+                color: grey;
             }
+
+            .phone-icon {
+                font-size: 50px;
+                margin-bottom: 13px;
+                color: grey;
+            }
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                margin: 2px;
+                color: grey;
+            }
+
+            .mail-icon {
+                font-size: 50px;
+                margin-bottom: 13px;
+                color: grey;
+            }
+        }    
+            
+        .social {
+            .follow {
+                text-align: center;
+                margin-top: 25px;
+                font-size: 25px;
+                color: orange;
+            }
+            
+            &-links {
+                display: flex;
+                justify-content: center;
+
+                a {
+                    display: block;
+                    margin: 8px;
+                    color: grey;
+                    transition: .3s; 
+                    
+                    .soc-icons {
+                        font-size: 30px;
+                    }
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+
+        }
         
     }
+
+    .form-mail {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+        box-shadow: 0 0 15px rgb(37, 37, 37);
+
+        &-text {
+            color: orange;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 2px;          
+        }
+
+        &-name {
+            margin-top: 25px;
+            label{
+                text-align: start;
+                margin-bottom: 5px;
+                display: block;
+                color: orange;
+                font-weight: 500;
+            }
+            input {
+                padding: 5px 10px;
+                outline: none;
+                background-color: black;
+                color: grey;
+                border: 1px solid grey;
+                border-radius: 4px;
+            }
+            .error {
+                color: red;
+            }
+        }
+        &-email {
+            label{
+                text-align: start;
+                margin-bottom: 5px;
+                display: block;
+                color: orange;
+                font-weight: 500;
+            }
+            input {
+                padding: 5px 10px;
+                outline: none;
+                background-color: black;
+                color: grey;
+                border: 1px solid grey;
+                border-radius: 4px;
+            }
+            .error {
+                color: red;
+            }
+        }
+
+        &-message {
+            label{
+                text-align: start;
+                margin-bottom: 5px;
+                display: block;
+                color: orange;
+                font-weight: 500;
+            }
+            textarea {
+                padding: 5px 10px;
+                outline: none;
+                background-color: black;
+                color: grey;
+                border: 1px solid grey;
+                border-radius: 4px;
+                max-width: 270px;
+                width: 100%;
+            }
+            .error {
+                color: red;
+            }
+        }
+
+        .send {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    
 }

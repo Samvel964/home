@@ -9,16 +9,15 @@ import Swal from 'sweetalert2'
 
 export default function EditDelete({list, index}) {
 
-
-
-    const dispatch = useDispatch()
-    const initialList = useSelector(initialTodo)
+    const dispatch = useDispatch();
+    const initialList = useSelector(initialTodo);
     function editTodoFunc(){      
-      let itemIndex = null
-      const itemTitle = list[index].title
+      let itemIndex = null;
+      const itemTitle = list[index].title;
       for (let i = 0; i < initialList.length;i++){
+
         if(initialList[i].title === itemTitle){
-          itemIndex = i
+          itemIndex = i;
         }
       }
         Swal.fire({
@@ -35,12 +34,14 @@ export default function EditDelete({list, index}) {
                 dispatch(editTodo({itemIndex,result:result.value}))
            
             }
-          })
+          });
     }
     function deleteTodoFunc() {
+
       let itemIndex = null
       const itemTitle = list[index].title
       for (let i = 0; i < initialList.length;i++){
+
         if(initialList[i].title === itemTitle){
           itemIndex = i
         }
@@ -62,8 +63,7 @@ export default function EditDelete({list, index}) {
                 'success'
               )
             }
-          })
-
+          });
     }
     return (
         <Stack direction="row" spacing={1}>

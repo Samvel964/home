@@ -6,7 +6,6 @@
     background-color:lightgrey;
     color: black;
 
-
     .todo-header {
         display: flex;
     }
@@ -30,6 +29,5 @@
     }
     @media(max-width:320px) {
         width: 310px;        
-    }
-    
+    }    
 }

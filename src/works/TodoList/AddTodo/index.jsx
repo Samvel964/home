@@ -1,4 +1,3 @@
-import './style.scss';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';

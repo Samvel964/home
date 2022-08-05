@@ -4,18 +4,26 @@ export const pathSlice = createSlice({
     name: 'path',
     initialState: {
         url: [],
-        pathname:''
+        pathname:'',
+        home: [],
+        about: []
     },
     reducers: {
         changeUrl: (state, action) => {
-            state.url.push(action.payload)
+            state.url.push(action.payload);
         },
         changePathname: (state, action) => {
-            state.pathname = action.payload
+            state.pathname = action.payload;
+        },
+        changeHome: (state , action) => {
+            state.home.push(action.payload);
+        },
+        changeAbout: (state, action) => {
+            state.about.push(action.payload);
         }
     }
 })
 
-export const { changeUrl, changePathname } = pathSlice.actions
+export const { changeUrl, changePathname, changeHome, changeAbout } = pathSlice.actions
 
 export default pathSlice.reducer

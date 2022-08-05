@@ -93,9 +93,7 @@ export default function TicTacToe() {
     if (step >= 9) {
      setItemClass("item disabled");
      winner();
-   }
-
-    
+   }    
   }
 
   return (
