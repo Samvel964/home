@@ -1,5 +1,6 @@
 import "./style.scss";
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Swal from "sweetalert2";
 import img1 from "./images/image1.jpg";
 import img2 from "./images/image2.jpg";
@@ -39,6 +40,7 @@ function shuffel() {
 shuffel();
 
 export default function MemoryGame() {
+  const { pathname } = useLocation()
   const [memory, setMemory] = useState(shuffel);
   const [className, setClassName] = useState("item ");
   const [num, setNum] = useState(1);
@@ -50,6 +52,16 @@ export default function MemoryGame() {
     }, 2000);
     // eslint-disable-next-line
   }, [num]);
+
+  useEffect(() => {
+    shuffel();
+    memory.forEach((item) => (item.state = "opened"))
+    correct.forEach((item) => (item.correct = false));
+    correct.length = 0;
+    setNum(num + 1);
+    setMemory(shuffel);
+    // eslint-disable-next-line
+  },[pathname])
 
   function onClickHandler(e, item) {
     item.state = "opened";

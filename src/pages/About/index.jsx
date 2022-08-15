@@ -11,26 +11,26 @@ export default function About() {
         <div className="abuot-info col-md-7">
           <div
             className={
-              aboutPath.length <= 2
+              aboutPath.length <= 1
                 ? "animate__animated animate__slideInUp animate__slow"
                 : ""
             }
           >
             <p>
-              Hello, my name is Samvel. I am from Armenia.I am 31 years old.
+              Hello, my name is Samvel. I am from Armenia.
             </p>
             <p>I am a junior web developer. </p>
-            <p>I have been working in Armenian Military Forces for 12 years.</p>
+            <p>I have worked in Armenian Military Forces.</p>
             <p>
               Then, I started my resarch on programming and decided to become a
-              programmer.{" "}
+              programmer.
             </p>
           </div>
         </div>
         <div className="info-continiue col-md-7">
           <div
             className={
-              aboutPath.length <= 2
+              aboutPath.length <= 1
                 ? "animate__animated animate__slideInUp animate__slower"
                 : ""
             }
@@ -55,7 +55,7 @@ export default function About() {
                 <li>github</li>
               </ul>
             </div>
-            <Link to="/contact">Contact ></Link>
+            <Link to="/contact">Contact {">"}</Link>
           </div>
         </div>
       </div>

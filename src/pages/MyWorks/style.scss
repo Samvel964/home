@@ -1,7 +1,7 @@
 .my-works {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:space-between;
     
     div {
         @media(max-width:425px) {

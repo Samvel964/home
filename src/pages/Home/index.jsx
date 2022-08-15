@@ -10,7 +10,7 @@ export default function Home() {
     <div className="home">
       <div className="container home-content">
         <div className="home-left col-md-6">
-          {homePath.length <= 2 ? 
+          {homePath.length < 1 ? 
           <>
             <TypeAnimation
                 cursor={false}
