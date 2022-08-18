@@ -1,3 +1,10 @@
+@mixin texts {
+    color: white;
+    background-color: #c44a4a;
+    padding: 2px;
+    border-radius: 5px;    
+}
+
 .title {
     font-size: 30px;
 }
@@ -17,7 +24,8 @@
         font-weight: 500;
         font-size: 19px;
     }
-    input[type=submit] {
+
+    button {
         border-radius: 6px;
         background-color: #ebebeb;
         border: 1px solid #848080;
@@ -25,7 +33,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        padding: 9.5px;
+        padding: 9px;
     }
 }
 
@@ -57,14 +65,12 @@
 
         &-right {
             p {
+                text-align: end;
                 margin-bottom: 7px;
                 color:  #dcd9d9;
 
                 span {
-                    color: white;
-                    background-color: #c44a4a;
-                    padding: 2px;
-                    border-radius: 5px;
+                    @include texts;
                 }
             }
         }
@@ -114,6 +120,39 @@
 
         p {
             padding: 5px 10px;
+        }
+    }
+    .info-for-five-day {
+        display: flex;
+        .one-day {
+            width: fit-content;
+            margin: 0 auto;
+            background-color: #acacac99;
+            border-radius: 5px;
+            padding: 5px 10px;
+
+            &-date {
+                margin-bottom: 2px;
+                text-align: center;
+                color: #534d4d;
+                background-color: rgb(235 235 235);
+                border-radius: 3px;
+                border: 1px solid grey;
+                font-size: 15px;
+                font-weight: normal;
+
+            }
+
+            &-temp {
+                margin-bottom: 5px;
+            }
+
+            &-humidity {
+                margin: 5px 0;
+                font-size: 14px;
+                text-align: center;
+                color: #3f3d3d;
+            }
         }
     }
 }

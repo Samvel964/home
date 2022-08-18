@@ -55,6 +55,10 @@ export default function About() {
                 <li>github</li>
               </ul>
             </div>
+            <p>Programming requires lots of time. In order to develop your skils, you should work hard.
+            To chalange myself, I usually think of some tasks and try to solve them.
+             Some of my tasks are presented in "Works" section.
+            </p>
             <Link to="/contact">Contact {">"}</Link>
           </div>
         </div>
