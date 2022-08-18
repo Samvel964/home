@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.f0d6c795.css",
-    "main.js": "/home/static/js/main.bf8844d7.js",
+    "main.css": "/home/static/css/main.067e5917.css",
+    "main.js": "/home/static/js/main.086dafad.js",
     "static/js/787.1ed0c42c.chunk.js": "/home/static/js/787.1ed0c42c.chunk.js",
-    "static/media/rain.jpg": "/home/static/media/rain.cd489f20b5feeb4404ba.jpg",
     "static/media/snow.jpg": "/home/static/media/snow.e029ab99a73b7ed46a8f.jpg",
     "static/media/image1.jpg": "/home/static/media/image1.9b53716afd7db9f7f782.jpg",
     "static/media/black.jpg": "/home/static/media/black.1313ae3efe16bb116328.jpg",
     "static/media/weather.png": "/home/static/media/weather.4ed78cbedaaf479a4a16.png",
+    "static/media/rain2.jpg": "/home/static/media/rain2.d48c640a1baf280747a5.jpg",
     "static/media/memory_game2.png": "/home/static/media/memory_game2.849f7968bb573c1ac644.png",
     "static/media/20220702_114613-removebg-preview.png": "/home/static/media/20220702_114613-removebg-preview.3e5366ab9b54cb9265de.png",
     "static/media/mist.jpg": "/home/static/media/mist.d4677fb1122aeecb1f1c.jpg",
@@ -20,12 +20,12 @@
     "static/media/tic-tac-toe-imageq.png": "/home/static/media/tic-tac-toe-imageq.556fae2c48b1a6a30627.png",
     "static/media/image6.jpg": "/home/static/media/image6.53c8ae35335bdcd9fa38.jpg",
     "index.html": "/home/index.html",
-    "main.f0d6c795.css.map": "/home/static/css/main.f0d6c795.css.map",
-    "main.bf8844d7.js.map": "/home/static/js/main.bf8844d7.js.map",
+    "main.067e5917.css.map": "/home/static/css/main.067e5917.css.map",
+    "main.086dafad.js.map": "/home/static/js/main.086dafad.js.map",
     "787.1ed0c42c.chunk.js.map": "/home/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0d6c795.css",
-    "static/js/main.bf8844d7.js"
+    "static/css/main.067e5917.css",
+    "static/js/main.086dafad.js"
   ]
 }
