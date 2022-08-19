@@ -1,20 +1,21 @@
 import './style.scss';
-import { getCurrentWeather } from '../../api/weather';
-import cities from './zip/current.city.list.json';
 import { useState, useEffect } from 'react';
 import { desk, kelvinToCelsius, hpaToMmhg, sunrise, sunset, getDate } from './zip/config';
+import { getCurrentWeather } from '../../api/weather';
+import { getweatherOfFiveDay } from '../../api/weather';
+import cities from './zip/current.city.list.json';
 import AirIcon from '@mui/icons-material/Air';
 import InvertColorsIcon from '@mui/icons-material/InvertColors';
 import CompareArrowsIcon from '@mui/icons-material/CompareArrows';
 import CheckIcon from '@mui/icons-material/Check';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import NightlightRoundIcon from '@mui/icons-material/NightlightRound';
-import { getweatherOfFiveDay } from '../../api/weather';
 
 export const Weather = () => {
     const [data, setData] = useState();
     const [dataFive, setDataFive] = useState();
-    const [filtered, setFiltered] = useState();
+    const [myData, setMyData] = useState([])
+
     let background;
     
     if (data) {
@@ -40,12 +41,21 @@ export const Weather = () => {
     }
 
 
-
     useEffect(() => {
-        setFiltered(dataFive?.filter(item => 
-            item.dt_txt.substring(8,10) !== 
+        const filtered = dataFive?.filter(data => 
+            data.dt_txt.substring(8,10) !== 
             getDate().substring(0,3))
-        );
+
+        setMyData(filtered?.map(item => {
+            return(
+                {
+                    date: item.dt_txt.substring(5,10),
+                    time: item.dt_txt.substring(11,13),
+                    temperature: item.main.temp,
+                    humidity: item.main.humidity
+                }
+            )
+        }))
     },[dataFive])
    
 
@@ -106,27 +116,27 @@ export const Weather = () => {
                             <CompareArrowsIcon />{hpaToMmhg(data?.main.pressure)} mmhg
                         </p>
                     </div>
-                    {filtered && 
+                    {myData && 
                     <div className='info-for-five-day'>
-                       {filtered?.map((data, index) => {
+                       {myData?.map((data, index) => {
                         if (index % 2 === 0) {
                             return (
-                                <div className='one-day'>
-                                    <p className='one-day-date'>{data.dt_txt.substring(5,10)}</p>
-                                    {filtered?.map((item, index) => {
-                                        if (item.dt_txt.substring(5,10) === 
-                                            data.dt_txt.substring(5,10)) {
+                                <div className='one-day' key={data.date.toString() + index.toString()}>
+                                    <p className='one-day-date'>{data.date}</p>
+                                    {myData?.map((item, index) => {
+                                        if (item.date === 
+                                            data.date) {
                                             return(
-                                                <div>
+                                                <div key={item.date.toString() + index.toString()}>
                                                     <p className='one-day-temp'>
-                                                        {+item.dt_txt.substring(11,13) < 10
+                                                        {+item.time < 10
                                                         ? <NightlightRoundIcon />
                                                         : <LightModeIcon style={{color: '#f7f822'}} />
-                                                    } {kelvinToCelsius(item.main.temp)}°</p>
+                                                    } {kelvinToCelsius(item.temperature)}°</p>
                                                     {index % 2 === 0 
                                                     ? <p className='one-day-humidity'>
                                                         <InvertColorsIcon sx={{fontSize:'medium'}} /> 
-                                                        {item.main.humidity}%
+                                                        {item.humidity}%
                                                       </p>
                                                     : null}
                                                 </div>

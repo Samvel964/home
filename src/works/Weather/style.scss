@@ -47,6 +47,7 @@
     color: black;
     margin: 0 auto;
     margin-top: 50px!important;
+    user-select: none;
 
     .city {
         display: flex;
@@ -127,7 +128,7 @@
         .one-day {
             width: fit-content;
             margin: 0 auto;
-            background-color: #acacac99;
+            background-color: #acacac8a;
             border-radius: 5px;
             padding: 5px 10px;
 

@@ -57,7 +57,7 @@ export default function About() {
             </div>
             <p>Programming requires lots of time. In order to develop your skils, you should work hard.
             To chalange myself, I usually think of some tasks and try to solve them.
-             Some of my tasks are presented in "Works" section.
+             Some of my tasks are presented in " <Link to='/my-works' >Works</Link> " section.
             </p>
             <Link to="/contact">Contact {">"}</Link>
           </div>

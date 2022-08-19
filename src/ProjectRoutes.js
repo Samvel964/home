@@ -12,7 +12,7 @@ import { Calculator } from "./works/Calculator/calculator";
 import { Weather } from "./works/Weather";
 
 
-export default function MyRoutes(){
+export default function ProjectRoutes(){
 
     return(
         <Routes>

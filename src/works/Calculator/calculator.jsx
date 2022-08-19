@@ -25,6 +25,10 @@ export const Calculator = () => {
                 setResult(arr.slice(0,arr.length - 1).join(""))
             }
         }
+
+        if (result === 'ERROR') {
+            setResult('')
+        }
         
     },[result])
 
