@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.900f6eec.css",
-    "main.js": "/home/static/js/main.4535ed5d.js",
+    "main.css": "/home/static/css/main.32683ab6.css",
+    "main.js": "/home/static/js/main.b90a959e.js",
     "static/js/787.1ed0c42c.chunk.js": "/home/static/js/787.1ed0c42c.chunk.js",
     "static/media/snow.jpg": "/home/static/media/snow.e029ab99a73b7ed46a8f.jpg",
     "static/media/image1.jpg": "/home/static/media/image1.9b53716afd7db9f7f782.jpg",
     "static/media/black.jpg": "/home/static/media/black.1313ae3efe16bb116328.jpg",
+    "static/media/scatteredClouds.jpg": "/home/static/media/scatteredClouds.bc2ec1bc155f69742d51.jpg",
     "static/media/weather.png": "/home/static/media/weather.4ed78cbedaaf479a4a16.png",
     "static/media/rain2.jpg": "/home/static/media/rain2.d48c640a1baf280747a5.jpg",
     "static/media/memory_game2.png": "/home/static/media/memory_game2.849f7968bb573c1ac644.png",
@@ -18,14 +19,15 @@
     "static/media/image2.jpg": "/home/static/media/image2.cb5b136ca8e7a6f88ac3.jpg",
     "static/media/cloudySky.jpg": "/home/static/media/cloudySky.fda326c4847b4feaf99b.jpg",
     "static/media/tic-tac-toe-imageq.png": "/home/static/media/tic-tac-toe-imageq.556fae2c48b1a6a30627.png",
+    "static/media/fewClouds.jpg": "/home/static/media/fewClouds.466f00a153f345517518.jpg",
     "static/media/image6.jpg": "/home/static/media/image6.53c8ae35335bdcd9fa38.jpg",
     "index.html": "/home/index.html",
-    "main.900f6eec.css.map": "/home/static/css/main.900f6eec.css.map",
-    "main.4535ed5d.js.map": "/home/static/js/main.4535ed5d.js.map",
+    "main.32683ab6.css.map": "/home/static/css/main.32683ab6.css.map",
+    "main.b90a959e.js.map": "/home/static/js/main.b90a959e.js.map",
     "787.1ed0c42c.chunk.js.map": "/home/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.900f6eec.css",
-    "static/js/main.4535ed5d.js"
+    "static/css/main.32683ab6.css",
+    "static/js/main.b90a959e.js"
   ]
 }
