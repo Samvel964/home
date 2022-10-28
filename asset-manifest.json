@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/home/static/css/main.e54c084e.css",
-    "main.js": "/home/static/js/main.e129a57c.js",
+    "main.js": "/home/static/js/main.ccd33e75.js",
     "static/js/787.1ed0c42c.chunk.js": "/home/static/js/787.1ed0c42c.chunk.js",
     "static/media/pizzeria.png": "/home/static/media/pizzeria.d6705e8421f0e03ade29.png",
     "static/media/velvet-main-image.png": "/home/static/media/velvet-main-image.dcf35eb0163eeebeaacc.png",
@@ -11,6 +11,7 @@
     "static/media/React.png": "/home/static/media/React.8a6fc0a24a800d1e0f4a.png",
     "static/media/black.jpg": "/home/static/media/black.1313ae3efe16bb116328.jpg",
     "static/media/scatteredClouds.jpg": "/home/static/media/scatteredClouds.bc2ec1bc155f69742d51.jpg",
+    "static/media/default.jpg": "/home/static/media/default.a685845e6ba02a840174.jpg",
     "static/media/weather.png": "/home/static/media/weather.4ed78cbedaaf479a4a16.png",
     "static/media/rain2.jpg": "/home/static/media/rain2.d48c640a1baf280747a5.jpg",
     "static/media/memory_game2.png": "/home/static/media/memory_game2.849f7968bb573c1ac644.png",
@@ -34,11 +35,11 @@
     "static/media/axios.webp": "/home/static/media/axios.b507172ef251e3c9ce7f.webp",
     "index.html": "/home/index.html",
     "main.e54c084e.css.map": "/home/static/css/main.e54c084e.css.map",
-    "main.e129a57c.js.map": "/home/static/js/main.e129a57c.js.map",
+    "main.ccd33e75.js.map": "/home/static/js/main.ccd33e75.js.map",
     "787.1ed0c42c.chunk.js.map": "/home/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e54c084e.css",
-    "static/js/main.e129a57c.js"
+    "static/js/main.ccd33e75.js"
   ]
 }
