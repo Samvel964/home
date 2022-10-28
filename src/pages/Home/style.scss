@@ -1,5 +1,19 @@
 .home {
     color: grey;
+    background-image: url(../../images/20220702_114613-removebg-preview.png);
+    background-size: 66%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    @media(max-width:425px){
+        .home {
+            background-size: 100%;
+            background-position: 100px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    }
 
     .home-content {
         

@@ -132,13 +132,13 @@ export default function ContactMe() {
           <div className="row social">
             <p className="follow">Social media links</p>
             <div className="social-links">
-              <a href="https://www.facebook.com/samvel.martirosyan.395/">
+              <a href="https://www.facebook.com/samvel.martirosyan.395/" target={'_blank'}>
                 <FacebookOutlinedIcon className="soc-icons" />
               </a>
-              <a href="https://www.linkedin.com/in/samvel-martirosyan-635b0b243/">
+              <a href="https://www.linkedin.com/in/samvel-martirosyan/" target={'_blank'}>
                 <LinkedInIcon className="soc-icons" />
               </a>
-              <a href="https://t.me/Samvel_Martirosyan_t">
+              <a href="https://t.me/Samvel_Martirosyan_t" target={'_blank'}>
                 <TelegramIcon className="soc-icons" />
               </a>
             </div>

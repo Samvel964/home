@@ -10,6 +10,7 @@ import CompareArrowsIcon from '@mui/icons-material/CompareArrows';
 import CheckIcon from '@mui/icons-material/Check';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import NightlightRoundIcon from '@mui/icons-material/NightlightRound';
+import defaultWeather from './images/default.jpg'
 
 export const Weather = () => {
     const [data, setData] = useState();
@@ -75,8 +76,8 @@ export const Weather = () => {
             <div className='row'>
             {data &&
                 <div 
-                className='weather col-md-6' 
-                style={{backgroundImage:`url(${background})`}} 
+                    className='weather col-md-6' 
+                    style={{backgroundImage:background !== undefined ?`url(${background})` : `url(${defaultWeather})`}} 
                 >
                     <div className='city'>
                         <div className='city-left'>

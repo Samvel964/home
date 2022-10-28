@@ -1,5 +1,7 @@
 import sunnySky from '../images/sunnySky.jpg';
 import cloudySky from '../images/cloudySky.jpg';
+import fewClouds from '../images/fewClouds.jpg';
+import scatteredClouds from '../images/scatteredClouds.jpg';
 import rain from '../images/rain2.jpg';
 import snow from '../images/snow.jpg';
 import mist from '../images/mist.jpg';
@@ -49,19 +51,19 @@ export const desk = [
     },
     {
         name : "few clouds",
-        image : cloudySky
+        image : fewClouds
     },
     {
         name: 'overcast clouds',
-        image : cloudySky
+        image : fewClouds
     },
     {
         name : "scattered clouds",
-        image : cloudySky
+        image : scatteredClouds
     },
     {
         name : "broken clouds",
-        image : cloudySky
+        image : scatteredClouds
     },
     {
         name : "shower rain",

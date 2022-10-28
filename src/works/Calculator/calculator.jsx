@@ -59,7 +59,7 @@ export const Calculator = () => {
             <div className='calculator border'>
                 <input type="text" className='screen' value={result.substring(0,14)} />
                 <div className="buttons">
-                    <button className='clear red' onClick={() => clear()}  >CLEAR</button>
+                    <button className='clear red' onClick={() => clear()}>CLEAR</button>
                     <button onClick={(e) => {backspace()}}>C</button>
                     <button className='blue' onClick={(e) => {onClickHandler(e)}}>/</button>
                     <button onClick={(e) => {onClickHandler(e)}}>7</button>
