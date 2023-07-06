@@ -6,12 +6,13 @@ import css from '../../images/toolsImage/CSS3_logo.svg.png';
 import sass from '../../images/toolsImage/sass.png';
 import bootstrap from '../../images/toolsImage/Bootstrap.png';
 import javaScript from '../../images/toolsImage/JavaScript.png';
-import jQuery from '../../images/toolsImage/JQuery.png';
+import typeScript from '../../images/Typescript_logo.png';
 import react from '../../images/toolsImage/React.png';
-import ajax from '../../images/toolsImage/AJAX.png';
+import angular from '../../images/Angular_logo.png';
 import axios from '../../images/toolsImage/axios.webp';
 import git from '../../images/toolsImage/Git.png';
 import github from '../../images/toolsImage/github2.png';
+import rxjs from '../../images/rxjs-logo.png';
 
 export default function About() {
   const aboutPath = useSelector((state) => state.path.about);
@@ -56,36 +57,17 @@ export default function About() {
               </div>
               <div className="col-md-3 cols">
                 <div><img src={javaScript} className='logo'/> JavaScript</div>
-                <div><img src={jQuery} className='logo'/> JQuery</div>
+                <div><img src={typeScript} className='logo'/> TypeScript</div>
                 <div><img src={react} className='logo'/> React JS</div>
-                <div><img src={ajax} className='logo'/> AJAX</div>
+                <div><img src={angular} className='logo'/> Angular</div>
               </div>
               <div className="col-md-3 cols">                
+                <div><img src={rxjs} className='logo'/> RxJS</div>
                 <div><img src={axios} className='logo'/> AXIOS</div>
                 <div><img src={git} className='logo'/> git</div>
                 <div><img src={github} className='logo'/> github</div>
               </div>
             </div>
-            {/* <div className="d-flex">
-              <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>SASS</li>
-                <li>SCSS</li>
-                <li>Bootstrap</li>
-              </ul>
-              <ul>
-                <li>JavaScript</li>
-                <li>JQuery</li>
-                <li>React JS</li>
-                <li>AJAX</li>
-              </ul>
-              <ul>
-                <li> AXIOS</li>
-                <li>git</li>
-                <li>github</li>
-              </ul>
-            </div> */}
             <p>Programming requires lots of time. In order to develop your skils, you should work hard.
             To chalange myself, I usually think of some tasks and try to solve them.
              Some of my tasks are presented in " <Link to='/my-works' >Works</Link> " section.

@@ -7,8 +7,8 @@ import calculator from '../../images/calculator3.png';
 import weather from '../../images/weather.png';
 import { useNavigate } from "react-router-dom";
 import velvet from '../../images/velvet-main-image.png';
-import shopProject from '../../images/shop-project-image.png';
-import pizzeria from '../../images/pizzeria.png'
+import pizzeria from '../../images/pizzeria.png';
+import outStaffPro from '../../images/outstaff-pro.png';
 
 export default function MyWorks() {
   const navigate = useNavigate();
@@ -17,6 +17,17 @@ export default function MyWorks() {
     <div className="my-works container">
       <h1 className="text-center title">Big Projects</h1>
       <div className="big-projects">
+      <a href="https://outstaff-pro.com" target={"_blank"}>
+        <div className="big-projects-item">
+          <div className="big-projects-item-description">
+            <h3>OUTSTAFF PRO</h3>
+            <p>"OutStaff Pro" is a real project. It's a platform aimed for specialist exchange. Via this platform companies
+              can find specialist they need as well as offer their own ones.
+              This is a great solutions for the companies who need temporary developers.</p>
+          </div>
+            <img src={outStaffPro} alt="outStaffPro" />          
+        </div>
+        </a>
       <a href="https://samvel964.github.io/velvet" target={"_blank"}>
         <div className="big-projects-item">
           <div className="big-projects-item-description" onClick={() => -1}>
@@ -35,7 +46,7 @@ export default function MyWorks() {
               <img src={pizzeria} alt="pizzeria" />            
           </div>
         </a>
-        <a href="https://samvel964.github.io/shop" target={"_blank"}>
+        {/* <a href="https://samvel964.github.io/shop" target={"_blank"}>
         <div className="big-projects-item">
           <div className="big-projects-item-description">
             <h3>Shop</h3>
@@ -43,7 +54,8 @@ export default function MyWorks() {
           </div>
             <img src={shopProject} alt="Shoping" />          
         </div>
-        </a>
+        </a> */}
+        
       </div>
         <h1 className="text-center title">Works & Apps</h1>
       <div className="main_content">
